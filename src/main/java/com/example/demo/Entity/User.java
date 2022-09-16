@@ -36,4 +36,11 @@ public class User {
     @OneToMany(mappedBy = "user")
     private List<Comment> comments;
 
+    public User(int id, String email, String password, String firstName, String lastName) {
+        this.id = id;
+        this.email = email;
+        this.password = password;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 }
